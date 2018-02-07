@@ -3,8 +3,6 @@ val commonSettings = Seq(
   scalaVersion := "2.12.4",
   crossScalaVersions := Seq(scalaVersion.value, "2.11.11"),
   scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xlint"),
-  scalafmtOnCompile := true,
-  scalafmtVersion := "1.4.0",
   // publishing
   publishTo := Some(
     if (isSnapshot.value)
